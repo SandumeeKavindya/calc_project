@@ -6,14 +6,15 @@ document.getElementById("output");*/
 
 
 function calc(){
-    let number1=document.getElementById("num01").value;
-    let number2=document.getElementById("num02").value;
+    let number1;
+    let number2;
+
+    number1=new Number(document.getElementById("num01").value);
+    number2=new Number(document.getElementById("num02").value);
     let output=document.getElementById("output");
 
-    let answer=number1+number2;
 
-
-    output.innerHTML=answer;
+    output.innerHTML=number1 + number2;
 
 }
 
